@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>A Personal Portfolio</title>
+        <title>Steve McGee | WebDev-er</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="style.css">
@@ -11,36 +11,34 @@
     <body ng-app='app'>
 
 <!-- Header / navbar          -->
-        <header>
-            <div class="headSpace">
+        <div id="mainWrapper">
+            <header>
+                <div class="headSpace">
 
-            </div>
-            <div class="headerContainer">
-                <div class="headerTitle">
-                    A Personal Portfolio Site
                 </div>
-                <ul>
-                    <li><a ui-sref="home">home</a></li>
-                    <li><a ui-sref="work">work</a></li>
-                    <li><a ui-sref="about">about</a></li>
-                    <li><a ui-sref="contact">contact</a></li>
-                </ul>
+                <div class="headerContainer">
+                    <div class="headerTitle">
+                        A Personal Portfolio Site
+                    </div>
+                    <ul>
+                        <li><a ui-sref="home">home</a></li>
+                        <li><a ui-sref="work">work</a></li>
+                        <li><a ui-sref="about">about</a></li>
+                        <li><a ui-sref="contact">contact</a></li>
+                    </ul>
+                </div>
+            </header>
+            <div id="content">
+    <!-- each ui-view shows here ... whole-page views-->
+                <ui-view></ui-view>
             </div>
-        </header>
 
-<!-- these are items that will display when the appropriate view is displayed, otherwise hidden         -->
-        <div class="subHeader">
-            <div class="home"></div>
-            <div class="work"></div>
-            <div class="about"></div>
-            <div class="contact"></div>
+    <!-- footer directive -->
+            <div id="footer">
+                <footer-dir></footer-dir>
+            </div>
+
         </div>
-
-<!-- each ui-view shows here ... whole-page views-->
-        <ui-view></ui-view>
-
-<!-- footer directive -->
-        <footer-dir></footer-dir>
 
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>

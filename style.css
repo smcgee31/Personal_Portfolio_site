@@ -5,9 +5,18 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{di
 /* box-sizing to most items */
 body,header,main,footer,div,article,aside,details,figcaption,figure,hgroup,menu,nav,input,textarea,select,a,p,ul,ol,li,span{box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 /* end reset */
+
+html,
 body {
     font: 16px/20px "Cabin",sans-serif;
-
+    height: 100%;
+}
+#mainWrapper {
+    min-height: 100%;
+    position: relative;
+}
+#content {
+    padding-bottom: 60px;
 }
 /*header content*/
 .headSpace {
@@ -69,6 +78,7 @@ body {
         /*filter: alpha(opacity=60);
         -webkit-filter: grayscale(100%);*/
     }
+
 .mainBlurb {
     width: 100%;
     margin-top: 68px;
@@ -79,6 +89,7 @@ body {
     .mainBlurb span {
         font-size: 36px;
     }
+
 .wwQuote {
     display: inline-block;
     width: 100%;
@@ -98,11 +109,16 @@ body {
         text-align: right;
         font: bold italic 16px/30px "Cabin",sans-serif;
     }
+
 /*About Page*/
 .personalBlurb {
     width: 300px;
     padding-left: 60px;
 }
+    .personalBlurb p:nth-child(1) {
+        font-size: 20px;
+        line-height: 24px;
+    }
 .skillsTitle {
     font: 30px/40px "VT323";
     padding-left: 60px;
@@ -134,40 +150,164 @@ body {
     padding-left: 60px;
     margin-right: 80px;
     vertical-align: top;
-}
-.workBlurb  h3 {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 12px;
-}
-.workBlurb  h4 {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 12px;
-}
-.workBlurb  p {
-    margin-bottom: 12px;
-}
+    }
+    .workBlurb  h3 {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 12px;
+    }
+    .workBlurb  h4 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 12px;
+    }
+    .workBlurb  p {
+        margin-bottom: 12px;
+    }
+
 .projectWindow {
     display: inline-block;
     width: 60%;
     border: 8px solid grey;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
 }
-.projectWindow img {
-    width: 100%;
-}
+    .projectWindow img {
+        width: 100%;
+    }
 
 /*Contact Page*/
+.linksContainer {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.linkEmail {
+    width: 80px;
+    height: 80px;
+    background-image: url('img/email.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    -webkit-transition: 0.15s ease-in-out;
+    -moz-transition: 0.15s ease-in-out;
+    -o-transition: 0.15s ease-in-out;
+    -ms-transition: 0.15s ease-in-out;
+    transition: 0.15s ease-in-out;
+}
+    .linkEmail:hover {
+        width: 80px;
+        height: 80px;
+        background-image: url('img/emailBlue.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: inline-block;
+    }
 
+.linkFacebook {
+    width: 80px;
+    height: 80px;
+    background-image: url('img/fbIcon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    -webkit-transition: 0.15s ease-in-out;
+    -moz-transition: 0.15s ease-in-out;
+    -o-transition: 0.15s ease-in-out;
+    -ms-transition: 0.15s ease-in-out;
+    transition: 0.15s ease-in-out;
+}
+    .linkFacebook:hover {
+        width: 80px;
+        height: 80px;
+        background-image: url('img/fbIconBlue.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: inline-block;
+    }
+
+.linkLinkedIn {
+    width: 80px;
+    height: 80px;
+    background-image: url('img/liIcon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    -webkit-transition: 0.15s ease-in-out;
+    -moz-transition: 0.15s ease-in-out;
+    -o-transition: 0.15s ease-in-out;
+    -ms-transition: 0.15s ease-in-out;
+    transition: 0.15s ease-in-out;
+}
+    .linkLinkedIn:hover {
+        width: 80px;
+        height: 80px;
+        background-image: url('img/liIconBlue.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: inline-block;
+    }
+
+.linkSlack {
+    width: 80px;
+    height: 80px;
+    background-image: url('img/slIcon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    -webkit-transition: 0.15s ease-in-out;
+    -moz-transition: 0.15s ease-in-out;
+    -o-transition: 0.15s ease-in-out;
+    -ms-transition: 0.15s ease-in-out;
+    transition: 0.15s ease-in-out;
+}
+    .linkSlack:hover {
+        width: 80px;
+        height: 80px;
+        background-image: url('img/slIconBlue.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: inline-block;
+    }
+
+.linkGithub {
+    width: 80px;
+    height: 80px;
+    background-image: url('img/gitIcon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    -webkit-transition: 0.15s ease-in-out;
+    -moz-transition: 0.15s ease-in-out;
+    -o-transition: 0.15s ease-in-out;
+    -ms-transition: 0.15s ease-in-out;
+    transition: 0.15s ease-in-out;
+}
+    .linkGithub:hover {
+        width: 80px;
+        height: 80px;
+        background-image: url('img/gitIconBlue.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: inline-block;
+    }
 
 /*Footer content*/
-footer {
-    /*position: fixed;
-    bottom: 0;*/
+#footer {
     width: 100%;
-}
-.footerContainer {
+	height: 60px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
     font: 15px/20px "Cabin",sans-serif;
     text-align: center;
     color: white;
