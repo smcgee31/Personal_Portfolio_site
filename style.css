@@ -17,7 +17,20 @@ body {
 }
 #content {
     padding-bottom: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
+
+
+
+
+
+
+
+
+
+
 /*header content*/
 .headSpace {
     width: 100%;
@@ -26,8 +39,7 @@ body {
 .headerContainer {
     width: 100%;
     height: 88px;
-    background: #000;
-    opacity: 0.5;
+    background: rgba(0, 0, 0, .5);
 }
     .headerContainer ul {
         float: right;
@@ -48,6 +60,14 @@ body {
     margin-left: 12px;
 }
 
+
+
+
+
+
+
+
+
 /*All Views*/
 .viewTopper {
     width: 100%;
@@ -56,6 +76,16 @@ body {
     padding-left: 60px;
     color: #0644fb
 }
+
+
+
+
+
+
+
+
+
+
 
 /*Home page content*/
 .homeWrapper {
@@ -75,16 +105,14 @@ body {
         margin: auto;
         min-width: 50%;
         min-height: 50%;
-        /*filter: alpha(opacity=60);
-        -webkit-filter: grayscale(100%);*/
     }
-
 .mainBlurb {
     width: 100%;
     margin-top: 68px;
     font: bold 20px/30px "Cabin",sans-serif;
     color: white;
     text-align: center;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);
 }
     .mainBlurb span {
         font-size: 36px;
@@ -94,12 +122,11 @@ body {
     display: inline-block;
     width: 100%;
     margin-top: 80px;
-    padding-right: 10%;
+    padding-right: 3%;
     text-align: right;;
     color: white;
     font: bold 20px/30px "Cabin",sans-serif;
-    /*background: #000;
-    opacity: 0.4;*/
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);
 }
     .wwQuote strong {
         font: bold 28px/46px "Bad Script", cursive;
@@ -110,38 +137,14 @@ body {
         font: bold italic 16px/30px "Cabin",sans-serif;
     }
 
-/*About Page*/
-.personalBlurb {
-    width: 300px;
-    padding-left: 60px;
-}
-    .personalBlurb p:nth-child(1) {
-        font-size: 20px;
-        line-height: 24px;
-    }
-.skillsTitle {
-    font: 30px/40px "VT323";
-    padding-left: 60px;
-    margin-bottom: 12px;
-}
-.skillsContainer {
-    width: 250px;
-    padding-left: 60px;
-    margin-bottom: 60px;
-}
-    .skillsImages {
-        width: 33.33%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        display: inline-block;
 
-    }
-        .skillsImages img {
-            width: 100%;
-            height: auto;
-        }
+
+
+
+
+
+
+
 
 /*Work Page*/
 .workBlurb {
@@ -164,7 +167,6 @@ body {
     .workBlurb  p {
         margin-bottom: 12px;
     }
-
 .projectWindow {
     display: inline-block;
     width: 60%;
@@ -175,15 +177,97 @@ body {
         width: 100%;
     }
 
+
+
+
+
+
+
+
+
+/*About Page*/
+.aboutSidebar {
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+}
+.personalBlurb {
+    width: 300px;
+    padding-left: 60px;
+    margin-bottom: 20px;
+}
+    .personalBlurb p:nth-child(1) {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+
+.interests {
+    display: inline-block;
+    width: 600px;
+    margin-left: 30px;
+}
+    .intIcon {
+        width: 120px;
+        height: 120px;
+        margin: 36px;
+        vertical-align: top;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        display: inline-block;
+    }
+    .intIcon img {
+        width: 100%;
+        height: auto;
+    }
+    .intIcon div p:nth-child(1) {
+        font-size: 18px;
+        font-weight: bold;
+    }
+.skillsTitle {
+    font: 30px/40px "VT323";
+    padding-left: 60px;
+    margin-bottom: 12px;
+}
+.skillsContainer {
+    width: 250px;
+    padding-left: 60px;
+    margin-bottom: 60px;
+}
+    .skillsImages {
+        width: 33.33%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        display: inline-block;
+    }
+        .skillsImages img {
+            width: 100%;
+            height: auto;
+        }
+
+
+
+
+
+
+
+
+
+
 /*Contact Page*/
 .linksContainer {
     width: 100%;
-    margin: auto;
+    margin: 60px auto;
     text-align: center;
 }
 .linkEmail {
     width: 80px;
     height: 80px;
+    margin: 0 6px;
     background-image: url('img/email.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -204,10 +288,10 @@ body {
         background-size: cover;
         display: inline-block;
     }
-
 .linkFacebook {
     width: 80px;
     height: 80px;
+    margin: 0 6px;
     background-image: url('img/fbIcon.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -228,10 +312,10 @@ body {
         background-size: cover;
         display: inline-block;
     }
-
 .linkLinkedIn {
     width: 80px;
     height: 80px;
+    margin: 0 6px;
     background-image: url('img/liIcon.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -252,10 +336,10 @@ body {
         background-size: cover;
         display: inline-block;
     }
-
 .linkSlack {
     width: 80px;
     height: 80px;
+    margin: 0 6px;
     background-image: url('img/slIcon.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -276,10 +360,10 @@ body {
         background-size: cover;
         display: inline-block;
     }
-
 .linkGithub {
     width: 80px;
     height: 80px;
+    margin: 0 6px;
     background-image: url('img/gitIcon.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -301,6 +385,14 @@ body {
         display: inline-block;
     }
 
+
+
+
+
+
+
+
+
 /*Footer content*/
 #footer {
     width: 100%;
@@ -310,8 +402,7 @@ body {
 	left: 0;
     font: 15px/20px "Cabin",sans-serif;
     text-align: center;
-    color: white;
-    background: #000;
-    opacity: 0.5;
+    color: #e2e2e2;
+    background: rgba(0, 0, 0, .5);
     padding: 8px;
 }
