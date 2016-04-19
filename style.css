@@ -45,7 +45,6 @@ body {
 
 
 
-
 /*header content*/
 .headSpace {
     width: 100%;
@@ -91,6 +90,7 @@ body {
 
 
 
+
 /*All Views*/
 .viewTopper {
     width: 100%;
@@ -112,26 +112,7 @@ body {
 
 
 
-
 /*Home page content*/
-/*.homeWrapper {
-    position: fixed;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    z-index: -1;
-}
-    .homeWrapper img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto;
-        min-width: 50%;
-        min-height: 50%;
-    }*/
 .mainBlurb {
     width: 100%;
     margin-top: 68px;
@@ -214,6 +195,7 @@ body {
     .projectWindow img {
         width: 100%;
     }
+
 
 
 
@@ -494,6 +476,7 @@ body {
     font-size: 42px;
     margin-top: 60px;
 }
+
 
 
 
