@@ -82,6 +82,8 @@ body {
     height: 90px;
     font: bold 40px/60px "Cabin",sans-serif;
     padding-left: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     color: #0644fb
 }
 
@@ -127,10 +129,13 @@ body {
     }
 
 .wwQuote {
+    position: fixed;
+    bottom: 33%;
+    right: 3%;
     display: inline-block;
     width: 100%;
     margin-top: 80px;
-    padding-right: 3%;
+    /*padding-right: 3%;*/
     text-align: right;;
     color: white;
     font: bold 20px/30px "Cabin",sans-serif;
