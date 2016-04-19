@@ -18,7 +18,7 @@ angular.module('app')
             title: 'Pokedex',
             desc: 'A mobile Pokedex for the serious Pokemon fan! This project was a lot of fun to design and get working since it was my first personal "creation" outside of my assignments while at DevMountain. (best viewed on a cell phone)',
             tech: ['HTML', 'CSS', 'AngularJS'],
-            img: 'img/Pokedex.png'
+            img: 'img/Pokedex_fixed.png'
         },
     ];
 

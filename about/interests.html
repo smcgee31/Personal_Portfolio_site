@@ -1,10 +1,9 @@
 <div class="interests">
     <div class="intIcon" ng-repeat="int in interests" ng-mouseenter="show = true" ng-mouseleave="show = false">
-            <img src="{{int.img}}" alt="{{int.name}}" ng-show="!show"/>
-            <div ng-show="show">
-                <p>{{int.name}}</p>
-                <p>{{int.memo}}</p>
-            </div>
+        <img src="{{int.img}}" alt="{{int.name}}" ng-show="!show"/>
+        <div ng-show="show">
+            <p>{{int.name}}</p>
+            <p>{{int.memo}}</p>
+        </div>
     </div>
-
 </div>
