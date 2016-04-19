@@ -2,7 +2,7 @@ angular.module('app')
 .controller('contactCtrl', function($scope) {
 
     $scope.visible  = false;
-    $scope.thanks = true;
+    $scope.thanks = false;
 
     $scope.toggle = function() {
         $scope.visible = !$scope.visible;
