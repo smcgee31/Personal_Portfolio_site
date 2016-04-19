@@ -1,29 +1,31 @@
-<div class="viewTopper">
-    work
-</div>
-<div ng-controller="workCtrl">
-    <div ng-repeat="project in projects">
-
-        <div class="workBlurb">
-            <h3>
-                {{project.title}}
-            </h3>
-            <p>
-                {{project.desc}}
-            </p>
-            <h4>Tech used:</h4>
-                <ul>
-                    <li>{{project.tech[0]}}</li>
-                    <li>{{project.tech[1]}}</li>
-                    <li>{{project.tech[2]}}</li>
-                    <li>{{project.tech[3]}}</li>
-                    <li>{{project.tech[4]}}</li>
-                    <li>{{project.tech[5]}}</li>
-                </ul>
-        </div>
-        <div class="projectWindow">
-            <img src="{{project.img}}" alt="{{project.title}}" />
-        </div>
+<div class="workWrapper">
+    <div class="viewTopper">
+        work
     </div>
+    <div ng-controller="workCtrl">
+        <div ng-repeat="project in projects">
 
+            <div class="workBlurb">
+                <h3>
+                    {{project.title}}
+                </h3>
+                <p>
+                    {{project.desc}}
+                </p>
+                <h4>Tech used:</h4>
+                    <ul>
+                        <li>{{project.tech[0]}}</li>
+                        <li>{{project.tech[1]}}</li>
+                        <li>{{project.tech[2]}}</li>
+                        <li>{{project.tech[3]}}</li>
+                        <li>{{project.tech[4]}}</li>
+                        <li>{{project.tech[5]}}</li>
+                    </ul>
+            </div>
+            <div class="projectWindow">
+                <img src="{{project.img}}" alt="{{project.title}}" />
+            </div>
+        </div>
+
+    </div>
 </div>
