@@ -3,59 +3,59 @@ angular.module('app').service('aboutSvc', function() {
     var skillset = [
         {
             name: 'html',
-            img: 'img/htmlLogo.png'
+            img: 'public/img/htmlLogo.png'
         },
         {
             name: 'css',
-            img: 'img/cssLogo.png'
+            img: 'public/img/cssLogo.png'
         },
         {
             name: 'javascript',
-            img: 'img/javascriptLogo.png'
+            img: 'public/img/javascriptLogo.png'
         },
         {
             name: 'angularjs',
-            img: 'img/angularjsLogo.png'
+            img: 'public/img/angularjsLogo.png'
         },
         {
             name: 'jquery',
-            img: 'img/jqueryLogo.png'
+            img: 'public/img/jqueryLogo.png'
         },
         {
             name: 'php',
-            img: 'img/phpLogo.png'
+            img: 'public/img/phpLogo.png'
         }
     ];
 
     var interests = [
         {
             name: 'Water Sports',
-            img: 'img/waterSkiing.svg',
+            img: 'public/img/waterSkiing.svg',
             memo: 'Boating, water skiiing, jet skiing, etc.'
         },
         {
             name: 'Movies',
-            img: 'img/cinema.svg',
+            img: 'public/img/cinema.svg',
             memo: 'Love \'em - \'nuff said!'
         },
         {
             name: 'Snowboarding',
-            img: 'img/snowboard.svg',
+            img: 'public/img/snowboard.svg',
             memo: 'I\'d rather snowboard than water ski!'
         },
         {
             name: 'Martial Arts',
-            img: 'img/martialArts.svg',
+            img: 'public/img/martialArts.svg',
             memo: 'Black belt in RyuKyu Kempo.'
         },
         {
             name: 'Travel',
-            img: 'img/travelShip.svg',
+            img: 'public/img/travelShip.svg',
             memo: 'WooWoo! Who doesn\'t love to travel!?'
         },
         {
             name: 'Hang Gliding',
-            img: 'img/hangGliding.svg',
+            img: 'public/img/hangGliding.svg',
             memo: 'Don\'t know how YET, but fascinated with it.'
         }
     ];

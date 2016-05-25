@@ -6,22 +6,22 @@ angular.module('app', ['ui.router'])
     $stateProvider
     .state('home', {
         url: '/',
-        templateUrl: 'home/home.html',
+        templateUrl: 'public/home/home.html',
         controller: 'homeCtrl'
     })
     .state('work', {
         url: '/work',
-        templateUrl: 'work/work.html',
+        templateUrl: 'public/work/work.html',
         controller: 'workCtrl'
     })
     .state('about', {
         url: '/about',
-        templateUrl: 'about/about.html',
+        templateUrl: 'public/about/about.html',
         controller: 'aboutCtrl'
     })
     .state('contact', {
         url: '/contact',
-        templateUrl: 'contact/contact.html',
+        templateUrl: 'public/contact/contact.html',
         controller: 'contactCtrl'
     });
 

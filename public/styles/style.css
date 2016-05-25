@@ -12,9 +12,10 @@ body {
     height: 100%;
 }
 #mainWrapper {
+    position: relative;;
     min-height: 100%;
-    position: center center fixed;
-    background-image: url('img/MotoRide2.jpg');
+    background: center center fixed;
+    background-image: url('../img/MotoRide2.jpg');
     background-color: #000;
     background-repeat: no-repeat;
     background-size: cover;
@@ -64,6 +65,7 @@ body {
             margin: -5px 30px 0px 0px;
         }
             .headerContainer a {
+                cursor: pointer;
                 color: white;
                 text-decoration: none;
                 -webkit-transition: 0.15s ease-in-out;
@@ -80,6 +82,9 @@ body {
     font: bold 18px/36px "Bad Script", cursive;
     color: white;
     margin-left: 12px;
+}
+.contactContainer {
+    
 }
 
 
@@ -314,7 +319,7 @@ body {
     width: 80px;
     height: 80px;
     margin: 0 6px;
-    background-image: url('img/email.svg');
+    background-image: url('../img/email.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -328,7 +333,7 @@ body {
     .linkEmail:hover {
         width: 80px;
         height: 80px;
-        background-image: url('img/emailBlue.svg');
+        background-image: url('../img/emailBlue.svg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -338,7 +343,7 @@ body {
     width: 80px;
     height: 80px;
     margin: 0 6px;
-    background-image: url('img/fbIcon.svg');
+    background-image: url('../img/fbIcon.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -352,7 +357,7 @@ body {
     .linkFacebook:hover {
         width: 80px;
         height: 80px;
-        background-image: url('img/fbIconBlue.svg');
+        background-image: url('../img/fbIconBlue.svg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -362,7 +367,7 @@ body {
     width: 80px;
     height: 80px;
     margin: 0 6px;
-    background-image: url('img/liIcon.svg');
+    background-image: url('../img/liIcon.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -376,7 +381,7 @@ body {
     .linkLinkedIn:hover {
         width: 80px;
         height: 80px;
-        background-image: url('img/liIconBlue.svg');
+        background-image: url('../img/liIconBlue.svg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -386,7 +391,7 @@ body {
     width: 80px;
     height: 80px;
     margin: 0 6px;
-    background-image: url('img/slIcon.svg');
+    background-image: url('../img/slIcon.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -400,7 +405,7 @@ body {
     .linkSlack:hover {
         width: 80px;
         height: 80px;
-        background-image: url('img/slIconBlue.svg');
+        background-image: url('../img/slIconBlue.svg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -410,7 +415,7 @@ body {
     width: 80px;
     height: 80px;
     margin: 0 6px;
-    background-image: url('img/gitIcon.svg');
+    background-image: url('../img/gitIcon.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -424,7 +429,7 @@ body {
     .linkGithub:hover {
         width: 80px;
         height: 80px;
-        background-image: url('img/gitIconBlue.svg');
+        background-image: url('../img/gitIconBlue.svg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
