@@ -26,15 +26,6 @@ body {
 
 }
 #content {
-    /*width: 80%;*/
-    /*right: 0;
-    left: 0;*/
-    /*padding-bottom: 60px;
-    max-width: 1200px;
-    height: 100%;
-    overflow: hidden;
-    margin: 0 auto;
-    background-color: #fff;*/
 }
 
 
@@ -52,6 +43,7 @@ body {
     height: 20px;
 }
 .headerContainer {
+    position: relative;
     width: 100%;
     height: 88px;
     background: rgba(0, 0, 0, .5);
@@ -84,8 +76,119 @@ body {
     margin-left: 12px;
 }
 .contactContainer {
-    
+    position: absolute;
+    top: 88px;
+    right: 0;
+    width: 100px;
+    background: rgba(0, 0, 0, .5);
 }
+.linksContainer {
+    display: none;
+    width: 100%;
+    margin: 24px auto;
+    text-align: center;
+}
+.linkscontainer.active {
+    display: block;
+}
+.linkEmail, .linkFacebook, .linkSlack, .linkGithub, .linkLinkedIn {
+    width: 40px;
+    height: 40px;
+    margin: 20px 6px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    -webkit-transition: 0.15s ease-in-out;
+    -moz-transition: 0.15s ease-in-out;
+    -o-transition: 0.15s ease-in-out;
+    -ms-transition: 0.15s ease-in-out;
+    transition: 0.15s ease-in-out;
+
+}
+.linkEmail:hover, .linkFacebook:hover, .linkLinkedIn:hover, .linkSlack:hover, .linkGithub:hover {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+}
+.linkEmail {
+    background-image: url('../img/emailWhite.svg');
+}
+    .linkEmail:hover {
+        background-image: url('../img/emailBlue.svg');
+    }
+.linkFacebook {
+    background-image: url('../img/fbIconWhite.svg');
+}
+    .linkFacebook:hover {
+        background-image: url('../img/fbIconBlue.svg');
+    }
+.linkLinkedIn {
+    background-image: url('../img/liIconWhite.svg');
+}
+    .linkLinkedIn:hover {
+        background-image: url('../img/liIconBlue.svg');
+    }
+.linkSlack {
+    background-image: url('../img/slIconWhite.svg');
+}
+    .linkSlack:hover {
+        background-image: url('../img/slIconBlue.svg');
+    }
+.linkGithub {
+    background-image: url('../img/gitIconWhite.svg');
+}
+    .linkGithub:hover {
+        background-image: url('../img/gitIconBlue.svg');
+    }
+.form {
+    display: block;
+    width: 450px;
+    margin: 0 auto;
+}
+.form p {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 12px auto;
+}
+.form input{
+    display: block;
+    font: 16px "Cabin",sans-serif;
+    padding: 9px 12px;
+    border: none;
+    background-color: #eeeeee;
+    color: #222222;
+    width: 100%;
+    margin-bottom: 12px;
+}
+.form textarea {
+    display: block;
+    font: 16px "Cabin",sans-serif;
+    padding: 9px 12px;
+    border: none;
+    background-color: #eeeeee;
+    color: #222222;
+    width: 450px;
+    height: 120px;
+    margin-bottom: 12px;
+}
+#submitButton {
+    width: 100px;
+    height: 36px;
+    font: 16px "Cabin",sans-serif;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0644fb;
+    border-radius: 5px;
+}
+.thanks {
+    width: 100%;
+    text-align: center;
+    font-size: 42px;
+    margin-top: 60px;
+}
+
 
 
 
@@ -310,177 +413,6 @@ body {
     background-color: rgba(255, 255, 255, .8);
 }
 
-.linksContainer {
-    width: 100%;
-    margin: 24px auto;
-    text-align: center;
-}
-.linkEmail {
-    width: 80px;
-    height: 80px;
-    margin: 0 6px;
-    background-image: url('../img/email.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: inline-block;
-    -webkit-transition: 0.15s ease-in-out;
-    -moz-transition: 0.15s ease-in-out;
-    -o-transition: 0.15s ease-in-out;
-    -ms-transition: 0.15s ease-in-out;
-    transition: 0.15s ease-in-out;
-}
-    .linkEmail:hover {
-        width: 80px;
-        height: 80px;
-        background-image: url('../img/emailBlue.svg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        display: inline-block;
-    }
-.linkFacebook {
-    width: 80px;
-    height: 80px;
-    margin: 0 6px;
-    background-image: url('../img/fbIcon.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: inline-block;
-    -webkit-transition: 0.15s ease-in-out;
-    -moz-transition: 0.15s ease-in-out;
-    -o-transition: 0.15s ease-in-out;
-    -ms-transition: 0.15s ease-in-out;
-    transition: 0.15s ease-in-out;
-}
-    .linkFacebook:hover {
-        width: 80px;
-        height: 80px;
-        background-image: url('../img/fbIconBlue.svg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        display: inline-block;
-    }
-.linkLinkedIn {
-    width: 80px;
-    height: 80px;
-    margin: 0 6px;
-    background-image: url('../img/liIcon.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: inline-block;
-    -webkit-transition: 0.15s ease-in-out;
-    -moz-transition: 0.15s ease-in-out;
-    -o-transition: 0.15s ease-in-out;
-    -ms-transition: 0.15s ease-in-out;
-    transition: 0.15s ease-in-out;
-}
-    .linkLinkedIn:hover {
-        width: 80px;
-        height: 80px;
-        background-image: url('../img/liIconBlue.svg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        display: inline-block;
-    }
-.linkSlack {
-    width: 80px;
-    height: 80px;
-    margin: 0 6px;
-    background-image: url('../img/slIcon.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: inline-block;
-    -webkit-transition: 0.15s ease-in-out;
-    -moz-transition: 0.15s ease-in-out;
-    -o-transition: 0.15s ease-in-out;
-    -ms-transition: 0.15s ease-in-out;
-    transition: 0.15s ease-in-out;
-}
-    .linkSlack:hover {
-        width: 80px;
-        height: 80px;
-        background-image: url('../img/slIconBlue.svg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        display: inline-block;
-    }
-.linkGithub {
-    width: 80px;
-    height: 80px;
-    margin: 0 6px;
-    background-image: url('../img/gitIcon.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: inline-block;
-    -webkit-transition: 0.15s ease-in-out;
-    -moz-transition: 0.15s ease-in-out;
-    -o-transition: 0.15s ease-in-out;
-    -ms-transition: 0.15s ease-in-out;
-    transition: 0.15s ease-in-out;
-}
-    .linkGithub:hover {
-        width: 80px;
-        height: 80px;
-        background-image: url('../img/gitIconBlue.svg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        display: inline-block;
-    }
-.form {
-    display: block;
-    width: 450px;
-    margin: 0 auto;
-}
-.form p {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 12px auto;
-}
-.form input{
-    display: block;
-    font: 16px "Cabin",sans-serif;
-    padding: 9px 12px;
-    border: none;
-    background-color: #eeeeee;
-    color: #222222;
-    width: 100%;
-    margin-bottom: 12px;
-}
-.form textarea {
-    display: block;
-    font: 16px "Cabin",sans-serif;
-    padding: 9px 12px;
-    border: none;
-    background-color: #eeeeee;
-    color: #222222;
-    width: 450px;
-    height: 120px;
-    margin-bottom: 12px;
-}
-#submitButton {
-    width: 100px;
-    height: 36px;
-    font: 16px "Cabin",sans-serif;
-    font-weight: bold;
-    color: #fff;
-    background-color: #0644fb;
-    border-radius: 5px;
-}
-.thanks {
-    width: 100%;
-    text-align: center;
-    font-size: 42px;
-    margin-top: 60px;
-}
 
 
 
