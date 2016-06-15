@@ -1,17 +1,7 @@
 @media (max-width: 480px) {
     #mainWrapper {
-        /*position: relative;;*/
-        /*min-height: 100%;*/
         background: center center fixed;
-        /*background-image: url('../img/MotoRide2.jpg');*/
         background-color: #fff;
-        /*background-repeat: no-repeat;*/
-        /*background-size: cover;*/
-        /*-webkit-background-size: cover;*/
-        /*-moz-background-size: cover;*/
-        /*-o-background-size: cover;*/
-        /*background-size: cover;*/
-        /*z-index: 0;*/
     }
     #content {}
     /*header content*/
@@ -49,35 +39,11 @@
         color: #fff;
         margin-left: 12px;
     }
-    /*.contactWrapper {
-        position: fixed;
-        top: 108px;
-        bottom: 70px;
-        left: 10%;
-        right: 10%;
-        margin: 0 auto;
-        overflow: auto;
-        background-color: rgba(255, 255, 255, .8);
-    }*/
-    /*.contactLinksContainer {
-        position: absolute;
-        top: 0px;
-        right: 0;
-        width: 100px;
-        background: rgba(0, 0, 0, .5);
-        z-index: 1;
-    }*/
     .linksContainer {
-        /*display: none;*/
         width: 100%;
-        /*padding-top: 80px;*/
         margin: 20px auto;
         text-align: center;
-        /*z-index: 5;*/
     }
-    /*.linksContainer.active {
-        display: block;
-    }*/
     .linkEmail, .linkFacebook, .linkSlack, .linkGithub, .linkLinkedIn {
         width: 12vw;
         height: 12vw;
@@ -285,11 +251,9 @@
     .aboutSidebar {
         display: block;
         width: 100%;
-        /*vertical-align: top;*/
         text-align: left;
         padding-left: 5%;
         margin-bottom: 5%;
-        /*float: left;*/
     }
     .personalBlurb p:nth-child(1) {
         font-size: 20px;
@@ -307,11 +271,6 @@
     }
     .skillsImages {
         width: 33.33%;
-        /*display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    display: inline-block;*/
     }
     .skillsImages img {
         width: 100%;
@@ -320,7 +279,6 @@
     .interests {
         display: block;
         width: 100%;
-        /*max-width: 700px;*/
         text-align: left;
         padding-left: 5%;
     }
@@ -340,7 +298,6 @@
         position: relative;
         top: 25%;
         width: 150%;
-        /*height: 120px;*/
         vertical-align: middle;
     }
     .intDesc p:nth-child(1) {

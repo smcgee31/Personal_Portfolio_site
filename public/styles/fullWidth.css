@@ -72,35 +72,11 @@
             color: white;
             margin-left: 12px;
         }
-        /*.contactWrapper {
-            position: fixed;
-            top: 108px;
-            bottom: 88px;
-            left: 10%;
-            right: 10%;
-            margin: 0 auto;
-            overflow: auto;
-            background-color: rgba(255, 255, 255, .8);*/
-        }
-        /*.contactLinksContainer {
-            position: absolute;
-            top: 20px;
-            right: 0;
-            width: 100px;
-            background: rgba(0, 0, 0, .85);
-            z-index: 1;
-        }*/
         .linksContainer {
-            /*display: none;*/
             width: 100%;
-            /*padding-top: 80px;*/
             margin: 24px auto;
             text-align: center;
-            /*z-index: 5;*/
         }
-        /*.linksContainer.active {
-            display: block;
-        }*/
         .linkEmail, .linkFacebook, .linkSlack, .linkGithub, .linkLinkedIn {
             max-width: 80px;
             width: 8vw;
@@ -362,7 +338,6 @@
             position: relative;
             top: 25%;
             width: 150%;
-            /*height: 120px;*/
             vertical-align: middle;
         }
         .intDesc p:nth-child(1) {
