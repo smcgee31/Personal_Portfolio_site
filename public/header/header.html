@@ -6,20 +6,56 @@
         <div class="headerTitle">
             A Personal Portfolio Site
         </div>
+
+
         <ul>
-            <li><a ui-sref="home">home</a></li>
-            <li><a ui-sref="work">work</a></li>
-            <li><a ui-sref="about">about</a></li>
-            <li><a ng-click="toggle()">contact</a></li>
-        </ul>
-        <div class="contactContainer" ng-controller="contactCtrl">
-            <div class="linksContainer" ng-class="{active: class}">
-                <div class="linkEmail" ng-click="toggle()"></div>
-                <a href="https://www.facebook.com/steve.mcgee.507?pnref=lhc.friends" target="_blank"><div class="linkFacebook"></div></a>
-                <a href="https://www.linkedin.com/in/steve-mcgee-48325047" target="_blank"><div class="linkLinkedIn"></div></a>
-                <a href="https://slack.com/" target="_blank"><div class="linkSlack"></div></a>
-                <a href="https://github.com/smcgee31/" target="_blank"><div class="linkGithub"></div></a>
+            <div class="navLink">
+                <li><a ui-sref="home">home</a></li>
             </div>
-        </div>
+            <div class="navLink">
+                <li><a ui-sref="work">work</a></li>
+            </div>
+            <div class="navLink">
+                <li><a ui-sref="about">about</a></li>
+            </div>
+            <div class="navLink">
+                <li><a ui-sref="contact">contact</a></li>
+            </div>
+            <!-- <div class="navLink" ng-mouseenter="hover = true">
+                <li><a>contact</a></li>
+            </div> -->
+
+        </ul>
+
+        <!-- Links Container - shows when Contacts is clicked             -->
+        <!-- <div class="contactLinksContainer"> -->
+            <!-- <div class="linksContainer" ng-class="{active: hover}" ng-mouseleave="hover = false"> -->
+                <!-- <div class="linkEmail" ng-click="toggleEmail()"></div> -->
+                    <!-- <div class="fade" ng-show="modalON" ng-click="toggleEmail()"> -->
+                        <!-- <div class="overlay"> -->
+                        <!-- </div> -->
+                    <!-- </div> -->
+                <!-- <a href="https://www.facebook.com/steve.mcgee.507?pnref=lhc.friends" target="_blank"><div class="linkFacebook"></div></a> -->
+                <!-- <a href="https://www.linkedin.com/in/steve-mcgee-48325047" target="_blank"><div class="linkLinkedIn"></div></a> -->
+                <!-- <a href="https://slack.com/" target="_blank"><div class="linkSlack"></div></a> -->
+                <!-- <a href="https://github.com/smcgee31/" target="_blank"><div class="linkGithub"></div></a> -->
+            <!-- </div> -->
+        <!-- </div> -->
+        <!--  Links Container  END         -->
+
     </div>
+
+    <div class="form" ng-show="email">
+        <p>Drop me a line...</p>
+        <form action="https://formspree.io/solodesign31@gmail.com" method="post">
+            <input type="text" name="_replyto" placeholder="Your email address..." required="true">
+            <input type="text" name="_subject" placeholder="Subject..." required="true">
+            <textarea type="text" name="message" placeholder="Your message..." required="true"></textarea>
+            <input type="text" name="_gotcha" style="display:none" />
+            <input id="submitButton" type="submit" value="Send" ng-click="thanks()"></button>
+            <input type="hidden" name="_next" value="http://127.0.0.1:3000/Personal_Portfolio/#/contact" />
+        </form>
+    </div>
+
+
 </header>

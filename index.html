@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Steve McGee | WebDev-er</title>
+        <title>Steve McGee | a MEAN guy</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="public/styles/style.css">
+        <link rel="stylesheet" type="text/css" href="public/styles/reset.css">
+        <link rel="stylesheet" type="text/css" href="public/styles/fullWidth.css">
+        <link rel="stylesheet" type="text/css" href="public/styles/max-width600.css">
+        <link rel="stylesheet" type="text/css" href="public/styles/max-width480.css">
         <link href='https://fonts.googleapis.com/css?family=VT323|Cabin:400,700|Bad+Script' rel='stylesheet' type='text/css'>
     </head>
     <body ng-app='app'>
         <!-- Header / navbar          -->
-        <div id="mainWrapper">
+        <div id="mainWrapper" ng-hide="email">
             <!-- header directive -->
             <header-dir></header-dir>
             <div id="content">

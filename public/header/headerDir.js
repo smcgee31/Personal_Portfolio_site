@@ -9,17 +9,17 @@ angular.module('app')
             $scope.visible  = false;
             $scope.thanks = false;
 
-            $scope.toggle = function() {
-                $scope.visible = !$scope.visible;
+            // $scope.toggleContact = function() {
+            //     $scope.contactsON = !$scope.contactsON;
+            // };
+
+            $scope.toggleEmail = function() {
+                $scope.email = !$scope.email;
             };
 
             $scope.thanks = function() {
                 $scope.visible = !$scope.visible;
                 $scope.thanks = !$scope.thanks;
-            };
-
-            $scope.toggle = function() {
-                $scope.class = !$scope.class;
             };
 
         }
