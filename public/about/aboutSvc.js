@@ -20,10 +20,6 @@ angular.module('app').service('aboutSvc', function() {
         {
             name: 'jquery',
             img: 'public/img/jqueryLogo.png'
-        },
-        {
-            name: 'php',
-            img: 'public/img/phpLogo.png'
         }
     ];
 
