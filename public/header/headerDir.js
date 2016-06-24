@@ -2,7 +2,7 @@ angular.module('app')
 .directive('headerDir', function() {
 
     return {
-        templateUrl: 'public/header/header.html',
+        templateUrl: 'header/header.html',
         restrict: 'AE',
         controller: function($scope) {
 
