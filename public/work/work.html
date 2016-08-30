@@ -13,13 +13,8 @@
                     </p>
                     <div class="tech">
                     <h4>Tech used:</h4>
-                        <ul>
-                            <li>{{project.tech[0]}}</li>
-                            <li>{{project.tech[1]}}</li>
-                            <li>{{project.tech[2]}}</li>
-                            <li>{{project.tech[3]}}</li>
-                            <li>{{project.tech[4]}}</li>
-                            <li>{{project.tech[5]}}</li>
+                        <ul class="techUsed">
+                            <li ng-repeat="tech in project.tech">{{tech}}</li>
                         </ul>
                     </div>
                 </div>

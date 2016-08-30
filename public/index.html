@@ -4,25 +4,22 @@
         <title>Steve McGee | a MEAN guy</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="styles/comb-styles-min.css">
+        <link rel="stylesheet" type="text/css" href="styles/styles.css">
         <link href='https://fonts.googleapis.com/css?family=VT323|Cabin:400,700|Bad+Script' rel='stylesheet' type='text/css'>
     </head>
     <body ng-app='app'>
         <!-- Header / navbar          -->
-        <div id="mainWrapper" ng-hide="email">
+        <div class="mainWrapper" ng-hide="email">
 
             <header-dir><!-- header directive --></header-dir>
-
 
             <div id="content">
                 <ui-view><!-- each ui-view shows here ... whole-page views--></ui-view>
             </div>
 
-
             <div id="footer">
                 <footer-dir><!-- footer directive --></footer-dir>
             </div>
-
 
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js"></script>
