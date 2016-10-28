@@ -3,15 +3,21 @@
         projects
     </div>
         <div class="projectArea"ng-controller="workCtrl" ng-repeat="project in projects">
-            <a href="{{project.url}}" target="_blank">
                 <div class="workBlurb">
-                    <h3>
-                        {{project.title}}
-                    </h3>
-                    <p>
-                        {{project.desc}}
-                    </p>
+                    <a href="{{project.url}}" target="_blank">
+                        <h3>
+                            {{project.title}}
+                        </h3>
+                        <p>
+                            {{project.desc}}
+                        </p>
+                    </a>
                     <div class="tech">
+                    <a href="{{project.code}}" target="_blank">
+                        <div class="codeButton">
+                            <span class="codeButtonText">See the code</span>
+                        </div>
+                    </a>
                     <h4>Tech used:</h4>
                         <ul class="techUsed">
                             <li ng-repeat="tech in project.tech">{{tech}}</li>
@@ -19,8 +25,9 @@
                     </div>
                 </div>
                 <div class="projectWindow">
-                    <img src="{{project.img}}" alt="{{project.title}}" />
+                    <a href="{{project.url}}" target="_blank">
+                        <img src="{{project.img}}" alt="{{project.title}}" />
+                    </a>
                 </div>
-            </a>
         </div>
 </div>

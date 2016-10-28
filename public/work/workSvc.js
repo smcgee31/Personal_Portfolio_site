@@ -7,19 +7,22 @@ angular.module('app')
             desc: 'This project is intended to be a piece of a larger website where the company is hoping to entice the potential customer into trying the simulation app and more fully understand one of the many financial things that they could do for the customer. This application takes the users debts in, and when the user decides how much more they can afford to apply to thier debts, will project a "debt freedom" date using a "waterfall" effect on the debts.',
             tech: ['HTML', 'CSS', 'AngularJS', 'Node.js', 'Express', 'MongoDB'],
             img: 'img/mwaterfall.png',
-            url: 'http://moneywaterfall.stevenmcgee.me'
+            url: 'http://moneywaterfall.stevenmcgee.me',
+            code: 'https://github.com/smcgee31/waterfall'
         },{
             title: 'React-Wiki-Search',
             desc: 'This is a small React app that simply hits the Wikipedia API and retrieves results. If you click the result it jumps to the actual Wikipedia page for that result.',
             tech: ['React', 'Webpack', 'HTML', 'CSS'],
             img: 'img/react-wiki.png',
-            url: 'http://react-wiki.stevenmcgee.me'
+            url: 'http://react-wiki.stevenmcgee.me',
+            code: 'https://github.com/smcgee31/react-wiki'
         },{
             title: 'Code School Clone',
             desc: 'While at DevMountain I cloned the home page of Code School for an HTML/CSS project. It was intended to be a pixel perfect replica and I think I did a pretty good job. The school has since changed their site but you can see some of the same things on their page still.',
             tech: ['HTML', 'CSS'],
             img: 'img/codeschoolclone.png',
-            url: 'http://codeschoolclone.stevenmcgee.me'
+            url: 'http://codeschoolclone.stevenmcgee.me',
+            code: 'https://github.com/smcgee31/codeschoolclone'
         },
         // {
         //     title: 'DevTunes',
