@@ -13,11 +13,12 @@
                         </p>
                     </a>
                     <div class="tech">
-                    <a href="{{project.code}}" target="_blank">
+                    <!-- <a href="{{project.code}}" target="_blank">
                         <div class="codeButton">
-                            <span class="codeButtonText">See the code</span>
+                            <span class="codeButtonText">{{project.codeText}}</span>
                         </div>
-                    </a>
+                    </a> -->
+                    <codebutton-dir></codebutton-dir>
                     <h4>Tech used:</h4>
                         <ul class="techUsed">
                             <li ng-repeat="tech in project.tech">{{tech}}</li>

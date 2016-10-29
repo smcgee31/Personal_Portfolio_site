@@ -8,21 +8,32 @@ angular.module('app')
             tech: ['HTML', 'CSS', 'AngularJS', 'Node.js', 'Express', 'MongoDB'],
             img: 'img/mwaterfall.png',
             url: 'http://moneywaterfall.stevenmcgee.me',
-            code: 'https://github.com/smcgee31/waterfall'
+            code: 'https://github.com/smcgee31/waterfall',
+            codeText: 'See the code'
+        },{
+            title: 'Hearing Matters',
+            desc: 'This is a live website that was built for a Audiologist in Boise. I was responsible for arrangement of content, creation of forms, styling to meet customer\'s expectations and requirements, creation and responsive styling of blog cards.',
+            tech: ['HTML', 'SASS', 'Gulp', 'Wordpress', 'PHP'],
+            img: 'img/hearingmatters.png',
+            url: 'http://hearingmatters.us',
+            code: '',
+            codeText: ''
         },{
             title: 'React-Wiki-Search',
             desc: 'This is a small React app that simply hits the Wikipedia API and retrieves results. If you click the result it jumps to the actual Wikipedia page for that result.',
             tech: ['React', 'Webpack', 'HTML', 'CSS'],
             img: 'img/react-wiki.png',
             url: 'http://react-wiki.stevenmcgee.me',
-            code: 'https://github.com/smcgee31/react-wiki'
+            code: 'https://github.com/smcgee31/react-wiki',
+            codeText: 'See the code'
         },{
             title: 'Code School Clone',
             desc: 'While at DevMountain I cloned the home page of Code School for an HTML/CSS project. It was intended to be a pixel perfect replica and I think I did a pretty good job. The school has since changed their site but you can see some of the same things on their page still.',
             tech: ['HTML', 'CSS'],
             img: 'img/codeschoolclone.png',
             url: 'http://codeschoolclone.stevenmcgee.me',
-            code: 'https://github.com/smcgee31/codeschoolclone'
+            code: 'https://github.com/smcgee31/codeschoolclone',
+            codeText: 'See the code'
         },
         // {
         //     title: 'DevTunes',
