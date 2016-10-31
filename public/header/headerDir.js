@@ -3,7 +3,8 @@ angular.module( 'app' )
 
 		return {
 			templateUrl: 'header/header.html',
-			restrict: 'AE',
+			restrict: 'E',
+			replace: true,
 			controller: function ( $scope ) {
 
 				$scope.visible = false;

@@ -639,6 +639,26 @@ body:before {
     display: block;
     margin: 0 5%;
   }
+  .codeButton {
+    font-size: 18px;
+    height: 45px;
+    text-align: center;
+    margin: 0 5% 12px 5%;
+    border-radius: 3px;
+    transition: background-color 0.15s ease;
+    background-color: #0644fb;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .codeButton:hover {
+    background-color: #0435C8;
+  }
+  .codeButtonText {
+    font-size: 18px;
+    line-height: 45px;
+    color:  white;
+    margin: 0 auto;
+  }
   .blueButton {
     font-size: 18px;
     height: 45px;

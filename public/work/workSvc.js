@@ -8,7 +8,7 @@ angular.module('app')
             tech: ['HTML', 'CSS', 'AngularJS', 'Node.js', 'Express', 'MongoDB'],
             img: 'img/mwaterfall.png',
             url: 'http://moneywaterfall.stevenmcgee.me',
-            code: 'https://github.com/smcgee31/waterfall',
+            codeUrl: 'https://github.com/smcgee31/waterfall',
             codeText: 'See the code'
         },{
             title: 'Hearing Matters',
@@ -16,15 +16,15 @@ angular.module('app')
             tech: ['HTML', 'SASS', 'Gulp', 'Wordpress', 'PHP'],
             img: 'img/hearingmatters.png',
             url: 'http://hearingmatters.us',
-            code: '',
-            codeText: ''
+            codeUrl: '',
+            codeText: 'Sorry - no code here'
         },{
             title: 'React-Wiki-Search',
             desc: 'This is a small React app that simply hits the Wikipedia API and retrieves results. If you click the result it jumps to the actual Wikipedia page for that result.',
             tech: ['React', 'Webpack', 'HTML', 'CSS'],
             img: 'img/react-wiki.png',
             url: 'http://react-wiki.stevenmcgee.me',
-            code: 'https://github.com/smcgee31/react-wiki',
+            codeUrl: 'https://github.com/smcgee31/react-wiki',
             codeText: 'See the code'
         },{
             title: 'Code School Clone',
@@ -32,16 +32,18 @@ angular.module('app')
             tech: ['HTML', 'CSS'],
             img: 'img/codeschoolclone.png',
             url: 'http://codeschoolclone.stevenmcgee.me',
-            code: 'https://github.com/smcgee31/codeschoolclone',
+            codeUrl: 'https://github.com/smcgee31/codeschoolclone',
             codeText: 'See the code'
         },
-        // {
-        //     title: 'DevTunes',
-        //     desc: 'This was an AngularJS class project that I completed while at DevMountain. It will search iTunes for your artist and return a grid with a list of songs with all the other iTunes information about those songs. PS. it looks fine down to an iPad but a cell phone... not so much - needs work there.',
-        //     tech: ['HTML', 'CSS', 'AngularJS'],
-        //     img: 'img/devtunes.png',
-        //     url: 'http://devtunes.stevenmcgee.me'
-        // },
+        {
+            title: 'DevTunes',
+            desc: 'This was an AngularJS class project that I completed while at DevMountain. It will search iTunes for your artist and return a grid with a list of songs with all the other iTunes information about those songs. PS. it looks fine down to an iPad but a cell phone... not so much - needs work there.',
+            tech: ['HTML', 'CSS', 'AngularJS'],
+            img: 'img/devtunes.png',
+            url: 'http://devtunes.stevenmcgee.me',
+            codeUrl: 'https://github.com/smcgee31/codeschoolclone',
+            codeText: 'See the code'
+        },
     ];
 
     this.getProjects = function() {

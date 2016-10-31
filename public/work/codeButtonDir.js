@@ -1,14 +1,15 @@
 angular.module('app')
-.directive('codebuttonDir', function() {
+    .directive('codebuttonDir', function() {
+    	
+        return {
+            templateUrl: 'work/codeButton.html',
+            restrict: 'E',
+            replace: true,
+            controller: function($scope, workSvc) {
+                $scope.projects = workSvc.getProjects();
+            }
+        };
 
-    return {
-        templateUrl: '<a href="{{project.code}}" target="_blank"><div class="codeButton"><span class="codeButtonText">{{project.codeText}}</span></div></a>',
-        restrict: 'AE',
-        controller: function($scope, workSvc) {
-            $scope.projects = workSvc.getProjects();
-        }
-    };
 
 
-
-});
+    });

@@ -3,7 +3,7 @@ angular.module('app')
 
     return {
         templateUrl: 'contact/thanks.html',
-        restrict: 'AE',
+        restrict: 'AE'
     };
 
 
